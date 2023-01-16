@@ -1,0 +1,22 @@
+POST http://localhost:5000/menu HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "input dummy",
+    "img": "input dummy",
+    "price": 1234121215
+}
+###
+
+GET http://localhost:5000/menu
+###
+
+PATCH http://localhost:5000/menu/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "good product",
+    "img": "no img",
+    "price": 1234121215
+}
+###
